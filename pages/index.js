@@ -11,15 +11,15 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header>
-        <div className="flex space-x-4 ">
-          <p>About</p>
-          <p>Store</p>
+      <header className="flex w-full p-5 justify-between text-sm text-gray-700">
+        <div className="flex space-x-4 items-center">
+          <p className="link">About</p>
+          <p className="link">Store</p>
         </div>
 
-        <div>
-          <p>Gmail</p>
-          <p>Images</p>
+        <div className="flex space-x-4 items-center">
+          <p className="link">Gmail</p>
+          <p className="link">Images</p>
         </div>
       </header>
 
