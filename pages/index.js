@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Avartar from '../components/Avartar'
+import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid"
 // import Image from 'next/image'
 
 
@@ -20,7 +22,13 @@ export default function Home() {
         <div className="flex space-x-4 items-center">
           <p className="link">Gmail</p>
           <p className="link">Images</p>
+        {/* Icon */}
+        <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer"/>
+
+        {/* Avatar */}
+        <Avartar url="https://coaching.papareact.com/ai9" />
         </div>
+
       </header>
 
       {/* Body */}
