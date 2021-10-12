@@ -31,14 +31,16 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form>
+      <form className="flex flex-col items-center mt-44 flex-grow">
         <Image
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           width={300}
           height={100}
         />
-        <div>
-          <SearchIcon />
+        <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl ">
+          <SearchIcon className="h-5 mr-5 text-gray-500" />
+          <input type="text" className="focus:outline-none flex-grow" />
+          <MicrophoneIcon className="h-5" />
         </div>
       </form>
 
