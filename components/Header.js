@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
+import Avatar from "./Avatar";
 
 function Header() {
   const router = useRouter();
@@ -48,6 +49,7 @@ function Header() {
             Search
           </button>
         </form>
+        <Avatar className="ml-auto" url="https://coaching.papareact.com/ai9" />
       </div>
     </header>
   );

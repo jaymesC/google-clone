@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Head from "next/head";
-import Avartar from "../components/Avartar";
+import Avatar from "../components/Avatar";
 import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Image from "next/image";
@@ -41,7 +41,7 @@ export default function Home() {
           <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
           {/* Avatar */}
-          <Avartar url="https://coaching.papareact.com/ai9" />
+          <Avatar url="https://coaching.papareact.com/ai9" />
         </div>
       </header>
 
