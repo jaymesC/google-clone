@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useRef } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import Avatar from "./Avatar";
-import HeaderOption from "./HeaderOption";
+import HeaderOptions from "./HeaderOptions";
 
 function Header() {
   const router = useRouter();
@@ -52,7 +52,7 @@ function Header() {
         </form>
         <Avatar className="ml-auto" url="https://coaching.papareact.com/ai9" />
       </div>
-      <HeaderOption />
+      <HeaderOptions />
     </header>
   );
 }

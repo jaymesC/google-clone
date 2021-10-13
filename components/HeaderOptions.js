@@ -1,4 +1,4 @@
-function Headeroption() {
+function Headeroptions() {
     return (
         <div>
             
@@ -6,4 +6,4 @@ function Headeroption() {
     )
 }
 
-export default Headeroption
+export default Headeroptions;
