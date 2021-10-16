@@ -6,12 +6,31 @@ import Link from "next/link";
 function PaginationButtons() {
     const router =  useRouter();
 
-    return (
-        <div>
-            
+    const startIndex = Number(router.query.start) || 0;
 
-        </div>
-    )
+    return (
+      <div>
+        {startIndex >= 10 && (
+          <Link
+            href={`/search?term=${router.query.term}&start=${startIndex - 10}`}
+          >
+            <div>
+              <ChevronLeftIcon />
+              <p>Previous</p>
+            </div>
+          </Link>
+        )}
+
+        <Link
+          href={`/search?term=${router.query.term}&start=${startIndex + 10}`}
+        >
+          <div>
+            <ChevronRightIcon />
+            <p>Next</p>
+          </div>
+        </Link>
+      </div>
+    );
 }
 
 export default PaginationButtons
