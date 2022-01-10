@@ -25,7 +25,7 @@ function PaginationButtons() {
           href={`/search?term=${router.query.term}&start=${startIndex + 10}`}
         >
           <div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
-            <ChevronRightIcon className="h-5" />
+            <ChevronRightIcon className="h-4" />
             <p>Next</p>
           </div>
         </Link>
